@@ -11,25 +11,25 @@ public class CameraController : MonoBehaviour {
     private float smooth = 5.0f;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
 
         offset = transform.position - player.transform.position;
-	}
+    }
 
-    private void FixedUpdate()
+    /* private void FixedUpdate()
     {
 
-        while (Input.GetKey("q"))
+        while (Input.GetKey("1"))
         {
             Quaternion targetRot = Quaternion.Euler(0, rotationSpeed, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * smooth);
         }
-        while (Input.GetKey("e"))
+        while (Input.GetKey("2"))
         {
             Quaternion targetRot = Quaternion.Euler(0, -rotationSpeed, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * smooth);
         }
-    }
+    }*/
 
     // Update is called once per frame
     void LateUpdate () {
